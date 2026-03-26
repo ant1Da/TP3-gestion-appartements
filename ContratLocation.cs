@@ -1,10 +1,10 @@
 class ContratLocation
 {
-    int numeroContrat {get; set;}
-    Locataire locataire {get; set;}
-    Logement logement {get; set;}
-    int nombreJours {get; set;}
-    double tarifJournalier {get; set;}
+    public int numeroContrat {get; set;}
+    public Locataire locataire {get; set;}
+    public Logement logement {get; set;}
+    public int nombreJours {get; set;}
+    public double tarifJournalier {get; set;}
     public ContratLocation(int numeroContrat, Locataire locataire, Logement logement, int nombreJours, double tarifJournalier)
     {
         if (nombreJours > 0 && tarifJournalier > 0 && logement.estDisponible() == true)

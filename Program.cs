@@ -44,5 +44,16 @@ class Program
         // test d'impossibilité de créer un contrat avec un logement non disponible ou avec des valeurs négatives
         ContratLocation c2 = new ContratLocation(2, loc1, s3, 0, 20);
         ContratLocation c3 = new ContratLocation(3, loc1, s1, 30, -20);
+
+        // partie 8
+
+        Agence agence = new Agence("Agence Immobilière");
+        agence.AjouterLogement(s1);
+        agence.AjouterLogement(m1);
+        agence.AjouterLocataire(loc1);
+        agence.AjouterContrat(c1);
+        agence.AfficherLogements();
+        agence.AfficherLocataires();
+        agence.AfficherContrats();
     }
 }

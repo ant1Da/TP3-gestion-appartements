@@ -1,8 +1,8 @@
 class Locataire
 {
-    int id {get; set;}
-    string nom {get; set;}
-    string telephone {get; set;}
+    public int id {get; set;}
+    public string nom {get; set;}
+    public string telephone {get; set;}
     public Locataire(int id, string nom, string telephone)
     {
         this.id = id;
