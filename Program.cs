@@ -20,5 +20,12 @@ class Program
 
         Studio s1 = new Studio("DAST", "Antoine", 25, 455, false, true);
         s1.Afficher();
+        Console.WriteLine($"Loyer du studio : {s1.CalculerLoyer()}");
+        Maison m1 = new Maison("ISRAEL", "Arthur", 25, 455, false, 50);
+        m1.Afficher();
+        Console.WriteLine($"Loyer de la maison : {m1.CalculerLoyer()}");
+        Appartement a1 = new Appartement("Connetable", "Antoine", 25, 455, false, 3);
+        a1.Afficher();
+        Console.WriteLine($"Loyer de l'appartement : {a1.CalculerLoyer()}");
     }
 }

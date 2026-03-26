@@ -23,4 +23,8 @@ class Logement
     {
         Console.WriteLine($"Ref : {reference} | Adresse : {adresse} | Surface : {surface} | LoyerBase : {loyerBase} | Disponible : {disponible}");
     }
+    public virtual double CalculerLoyer()
+    {
+        return loyerBase;
+    }
 }

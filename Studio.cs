@@ -10,4 +10,15 @@ class Studio : Logement
         base.Afficher();
         Console.WriteLine($"Meublé : {meublé}");
     }
+    public override double CalculerLoyer()
+    {
+        if (meublé)
+        {
+            return base.CalculerLoyer() + 50;
+        }
+        else
+        {
+            return base.CalculerLoyer();
+        }
+    }
 }
