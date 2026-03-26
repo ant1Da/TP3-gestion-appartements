@@ -1,6 +1,6 @@
 class Appartement : Logement
 {
-    private int nombrePieces;
+    int nombrePieces;
 
     public Appartement(string reference, string adresse, int surface, double loyerBase, bool disponible, int nombrePieces) : base(reference, adresse, surface, loyerBase, disponible)
     {

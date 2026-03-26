@@ -1,6 +1,6 @@
 class Studio : Logement
 {
-    private bool meublé {get; set;}
+    bool meublé {get; set;}
     public Studio(string reference, string adresse, int surface, double loyerBase, bool disponible, bool meublé) : base(reference, adresse, surface, loyerBase, disponible)
     {
         this.meublé = meublé;

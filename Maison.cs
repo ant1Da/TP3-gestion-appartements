@@ -1,6 +1,6 @@
 class Maison : Logement
 {
-    private int surfaceJardin {get; set;}
+    int surfaceJardin {get; set;}
     public Maison(string reference, string adresse, int surface, double loyerBase, bool disponible, int surfaceJardin) : base(reference, adresse, surface, loyerBase, disponible)
     {
         if (surfaceJardin > 0 || surfaceJardin == 0)

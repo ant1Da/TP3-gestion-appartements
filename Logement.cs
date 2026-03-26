@@ -19,6 +19,14 @@ class Logement
         }
         else {Console.WriteLine("Impossible");}
     }
+    public void disponibilite(bool disponible)
+    {
+        this.disponible = disponible;
+    }
+    public bool estDisponible()
+    {
+        return disponible;
+    }
     public virtual void Afficher()
     {
         Console.WriteLine($"Ref : {reference} | Adresse : {adresse} | Surface : {surface} | LoyerBase : {loyerBase} | Disponible : {disponible}");
